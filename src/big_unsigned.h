@@ -11,6 +11,7 @@ class BigUnsigned {
 
   int Size() const { return numero_unsigned_.size();}
   unsigned char at(int posicion) const { return numero_unsigned_[posicion];}
+  unsigned char& at(int posicion) { return numero_unsigned_[posicion];}
 
   BigUnsigned& operator=(const BigUnsigned&);
   
